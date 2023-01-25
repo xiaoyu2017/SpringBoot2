@@ -1,0 +1,18 @@
+server:
+  port: 80
+spring:
+  # 数据源配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:33060/SSM?serverTimezone=UTC
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+  main:
+    banner-mode: off # 关闭springboot启动图标
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 开启sql日志
+  global-config:
+    banner: off # 关闭MybatisPlus启动图标
